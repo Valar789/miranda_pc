@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import { Navbar, Button } from "flowbite-react";
 
 export default function NavBar() {
