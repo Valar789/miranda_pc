@@ -12,7 +12,7 @@ export default function About() {
           <h1 className="text-4xl font-bold text-blue-900  pb-4">
             Quienes somos
           </h1>
-          <p className="my-4">
+          <p className="my-2">
             Somos una empresa de soporte técnico y mantenimiento de computadores
             en Miranda cauca. Contamos con una amplia experiencia de más de 10
             años, que nos permite optimizar los procesos para dar soluciones

@@ -28,7 +28,7 @@ export default function NavBar() {
     <div
     ref={refnav}
       id="topNavBar"
-      className="navbar float text-white bg-slate-900 fixed top-0 z-50"
+      className="inDown navbar float text-white bg-slate-900 fixed top-0 z-50"
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -88,9 +88,9 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <Link href="#header">
-          
-          <a className="btn btn-ghost normal-case text-xl"><Image height={55} width={200} src={logo} alt='logo'/></a>
+        <Link href="#header">    
+        <a className="flex mx-4 text-4xl font-semibold">Miranda <div className="text-blue-400 font-bold">PC</div></a>      
+          {/* <a className="text-xl "><Image height={45} width={220} src={logo} alt='logo'/></a> */}
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -142,7 +142,7 @@ export default function NavBar() {
         </ul>
       </div>
       <div id='asistencia' className="navbar-end mr-4">
-        <Link href='#contacto'><a className="btn btn-sm border-none bg-blue-900 text-white">Agenta tu Cita</a></Link>
+        <Link href='#contacto'><a className="btn btn-sm border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900 text-white">Agenta tu Cita</a></Link>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ export default function Asesoria() {
   return (
     <section
       id="ubicacion"
-      className="backdrop-blur-sm bg-white/80 px-7 py-32 text-white flex m-auto w-full h-full "
+      className="  bg-white  px-7 py-32 text-white flex m-auto w-full h-full "
     >
       <div className="flex flex-wrap gap-5 text-gray-700 m-auto">
         <div className="w-full sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto">
@@ -24,7 +24,7 @@ export default function Asesoria() {
             Nos ubicamos en la carrera 7b 13-64 barrio colseguros Miranda cauca
           </p>
           <Link href="#contacto">
-            <a className="btn  border-none bg-blue-900 mt-8 text-white">
+            <a className="btn my-3 border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900mt-8 text-white">
               Solicitar Asesoria
             </a>
           </Link>

@@ -32,7 +32,7 @@ export default function Contacto() {
   return (
     <section
       id="contacto"
-      className="backdrop-blur-sm bg-white/80 px-7 py-32 text-gray-700 flex m-auto w-full h-full"
+      className="  bg-gray-200  px-7 py-32 text-gray-700 flex m-auto w-full h-full"
     >
       <div className="flex flex-wrap gap-5">
         <div className="w-full  sm:w-12/12 md:w-10/12 lg:w-6/12 mx-auto text-White m-auto">
@@ -55,8 +55,8 @@ export default function Contacto() {
             puedes comunicarte a nuestros números de celular.
           </p>
           <div className="my-4">
-            <p className="text-lg font-semibold">Cel. 305 273 8798</p>
-            <p className="text-lg font-semibold">Cel. 311 616 8833</p>
+            <p className="text-lg text-blue-900 font-bold">Cel. 305 273 8798</p>
+            <p className="text-lg text-blue-900 font-bold">Cel. 311 616 8833</p>
           </div>
         </div>
         <div className="w-full sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto">
@@ -140,7 +140,7 @@ export default function Contacto() {
             <div className="form-control">
               <button
                 onClick={sendMessage}
-                className="btn  btn-sm border-none text-white bg-blue-900   my-4"
+                className="btn  btn-sm border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900 text-white   my-4"
               >
                 Enviar
               </button>

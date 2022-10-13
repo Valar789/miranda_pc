@@ -2,14 +2,16 @@ import Image from "next/image";
 
 import desespero from "public/desespero.jpg";
 
+
 import Link from "next/link";
 
 export default function Asesoria() {
   return (
     <section
       id="asesoria"
-      className="backdrop-blur-sm bg-white/80 px-7 py-32 text-white flex m-auto w-full h-full "
+      className=" bg-white  px-7 py-32 text-white flex m-auto w-full h-full "
     >
+
       <div className="boxImagen gap-5 flex flex-wrap text-gray-700 m-auto">
         <div className="sm:w-12/12 md:w-10/12 lg:w-6/12 m-auto">
           <Image
@@ -32,12 +34,12 @@ export default function Asesoria() {
             ofrece el internet y que son de fácil acceso y descarga.
           </p>
           <p className="my-5">
-            Ten tus dispositivos funcionando al 100% con nuestro
-            servicio de soporte técnico remoto y mantenimiento de computadores.
+            Ten tus dispositivos funcionando al 100% con nuestro servicio de
+            soporte técnico remoto y mantenimiento de computadores.
           </p>
-      
+
           <Link href="#contacto">
-            <a className="btn border-none bg-blue-900 mt-8 text-white">
+            <a className="btn border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900 text-white">
               Solicitar Asesoria
             </a>
           </Link>
