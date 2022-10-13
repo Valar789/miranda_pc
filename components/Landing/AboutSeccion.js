@@ -18,10 +18,9 @@ export default function About() {
             años, que nos permite optimizar los procesos para dar soluciones
             efectivas y garantizadas a nuestros clientes.
           </p>
-          <p className="my-2 font-bold">Mision: </p>
+          <p className="my-2 font-bold">Misión: </p>
           <p className="">
-            Nuestra mision siempre sera brindar la mejor calidad de servicio en
-            las diferentes etapas del proceso para garantizar la efectividad
+          Nuestra misión siempre será brindar la mejor calidad de servicio en las diferentes etapas del proceso para garantizar la efectividad.
           </p>
           <p className="my-2 font-bold">Responsabilidad: </p>
           <p>

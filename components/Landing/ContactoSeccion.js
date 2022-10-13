@@ -4,7 +4,7 @@ export default function Contacto() {
   const [mensaje, setMensaje] = useState({
     name: "",
     email: "",
-    solicitud:"",
+    solicitud: "",
     message: "",
   });
 
@@ -49,10 +49,11 @@ export default function Contacto() {
             Contáctanos ahora para que podamos asesorarte y darte el mejor
             servicio con un Precio Especial en este momento.
           </p>
-          <br/>
+          <br />
           <p>
-            Envianos un correo y conctactaremos para agendarte una cita o
-            tambien puedes comunicarte a nuestros numeros de celular </p>
+            Envianos un correo y contactaremos para agendarte una cita o también
+            puedes comunicarte a nuestros números de celular.
+          </p>
           <div className="my-4">
             <p className="text-lg font-semibold">Cel. 305 273 8798</p>
             <p className="text-lg font-semibold">Cel. 311 616 8833</p>
@@ -62,7 +63,9 @@ export default function Contacto() {
           <form className="text-gray-800 bg-white px-3 rounded-md shadow-lg">
             <div className="form-control mb-4 flex">
               <label className="label">
-                <span className="label-text text-gray-700 font-semibold ">Nombre</span>
+                <span className="label-text text-gray-700 font-semibold ">
+                  Nombre
+                </span>
               </label>
               <input
                 onChange={captureValues}
@@ -73,7 +76,9 @@ export default function Contacto() {
             </div>
             <div className="form-control mb-4">
               <label className="label">
-                <span className="label-text text-gray-700 font-semibold  ">Email</span>
+                <span className="label-text text-gray-700 font-semibold  ">
+                  Email
+                </span>
               </label>
 
               <input
@@ -85,18 +90,39 @@ export default function Contacto() {
             </div>
             <div className="form-control mb-4 flex">
               <label className="label">
-                <span className="label-text text-gray-700 font-semibold">Tipo de solicitud</span>
+                <span className="label-text text-gray-700 font-semibold">
+                  Tipo de solicitud
+                </span>
               </label>
-              <select onChange={captureValues} name='solicitud'className="bg-gray-200 select select-bordered select-sm w-full">
-                <option value='Diagnostico'> Diagnostico</option>
-                <option value='Mantenimiento Preventivo Hardware'> Mantenimiento Preventivo Hardware</option>
-                <option value='Mantenimiento Preventivo Software'> Mantenimiento Preventivo Software</option>
-                <option value='Reparación'> Reparación</option>
-                <option value='Instalación software'> Instalación software</option>
-                <option value='Instalación de Hardware'> Instalación de Hardware</option>
-                <option value='Formateo'> Formateo</option>
-                <option value='Instalación Sistemas Operativos'> Instalación Sistemas Operativos</option>
-                <option value='Actualización'> Actualización</option>
+              <select
+                onChange={captureValues}
+                name="solicitud"
+                className="bg-gray-200 select select-bordered select-sm w-full"
+              >
+                <option value="Diagnostico"> Diagnostico</option>
+                <option value="Mantenimiento Preventivo Hardware">
+                  {" "}
+                  Mantenimiento Preventivo Hardware
+                </option>
+                <option value="Mantenimiento Preventivo Software">
+                  {" "}
+                  Mantenimiento Preventivo Software
+                </option>
+                <option value="Reparación"> Reparación</option>
+                <option value="Instalación software">
+                  {" "}
+                  Instalación software
+                </option>
+                <option value="Instalación de Hardware">
+                  {" "}
+                  Instalación de Hardware
+                </option>
+                <option value="Formateo"> Formateo</option>
+                <option value="Instalación Sistemas Operativos">
+                  {" "}
+                  Instalación Sistemas Operativos
+                </option>
+                <option value="Actualización"> Actualización</option>
               </select>
             </div>
 
