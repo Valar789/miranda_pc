@@ -32,11 +32,11 @@ export default function Contacto() {
   return (
     <section
       id="contacto"
-      className="  bg-gray-200  px-7 py-32 text-gray-700 flex m-auto w-full h-full"
+      className="b  bg-slate-900/70 px-7 py-32 text-white flex m-auto w-full h-full"
     >
       <div className="flex flex-wrap gap-5">
         <div className="w-full  sm:w-12/12 md:w-10/12 lg:w-6/12 mx-auto text-White m-auto">
-          <h1 className="text-4xl font-bold  text-blue-900 pb-4">
+          <h1 className="text-5xl font-bold  text-white pb-4">
             Programa tu servicio técnico
           </h1>
           <p>
@@ -51,12 +51,12 @@ export default function Contacto() {
           </p>
           <br />
           <p>
-            Envianos un correo y contactaremos para agendarte una cita o también
+            Envianos un correo y te contactaremos para agendar una cita o también
             puedes comunicarte a nuestros números de celular.
           </p>
           <div className="my-4">
-            <p className="text-lg text-blue-900 font-bold">Cel. 305 273 8798</p>
-            <p className="text-lg text-blue-900 font-bold">Cel. 311 616 8833</p>
+            <p className="text-lg text-white font-bold">Cel. 305 273 8798</p>
+            <p className="text-lg text-white font-bold">Cel. 311 616 8833</p>
           </div>
         </div>
         <div className="w-full sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto">
