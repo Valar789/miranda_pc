@@ -4,6 +4,7 @@ export default function Contacto() {
   const [mensaje, setMensaje] = useState({
     name: "",
     email: "",
+    solicitud:"",
     message: "",
   });
 
@@ -31,12 +32,11 @@ export default function Contacto() {
   return (
     <section
       id="contacto"
-      className="bg-semitransparent px-7 py-32 text-white flex m-auto w-full h-full"
+      className="backdrop-blur-sm bg-white/80 px-7 py-32 text-gray-700 flex m-auto w-full h-full"
     >
-      <div className="flex flex-wrap ">
-        <div className="w-full md:w-4/12 mx-auto text-White m-auto">
-          <h1 className="text-4xl font-bold  pb-4">
-
+      <div className="flex flex-wrap gap-5">
+        <div className="w-full  sm:w-12/12 md:w-10/12 lg:w-6/12 mx-auto text-White m-auto">
+          <h1 className="text-4xl font-bold  text-blue-900 pb-4">
             Programa tu servicio técnico
           </h1>
           <p>
@@ -47,56 +47,75 @@ export default function Contacto() {
           </p>
           <p>
             Contáctanos ahora para que podamos asesorarte y darte el mejor
-            servicio con un Precio Especial en este momento.  Escríbenos te contactaremos dentro las 24 horas hábiles.
+            servicio con un Precio Especial en este momento.
           </p>
+          <br/>
+          <p>
+            Envianos un correo y conctactaremos para agendarte una cita o
+            tambien puedes comunicarte a nuestros numeros de celular </p>
           <div className="my-4">
-
             <p className="text-lg font-semibold">Cel. 305 273 8798</p>
             <p className="text-lg font-semibold">Cel. 311 616 8833</p>
           </div>
         </div>
-        <div className="w-full md:w-4/12 m-auto">
-          <form className="bg-white text-gray-900 p-5 rounded-xl shadow-md">
-            <div className="form-control mb-4">
+        <div className="w-full sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto">
+          <form className="text-gray-800 bg-white px-3 rounded-md shadow-lg">
+            <div className="form-control mb-4 flex">
               <label className="label">
-                <span className="label-text text-gray-900 ">Nombre</span>
+                <span className="label-text text-gray-700 font-semibold ">Nombre</span>
               </label>
-
               <input
                 onChange={captureValues}
                 name="name"
                 type="text"
-                placeholder="Escribe tu nombre"
-                className="input bg-gray-300"
+                className="input input-sm border-none font-semibold bg-gray-200 "
               />
             </div>
             <div className="form-control mb-4">
               <label className="label">
-                <span className="label-text text-gray-900 ">Email</span>
+                <span className="label-text text-gray-700 font-semibold  ">Email</span>
               </label>
 
               <input
                 onChange={captureValues}
                 name="email"
                 type="email"
-                placeholder="Escribe tu correo"
-                className="input bg-gray-300"
+                className="input input-sm border-none font-semibold bg-gray-200 "
               />
             </div>
+            <div className="form-control mb-4 flex">
+              <label className="label">
+                <span className="label-text text-gray-700 font-semibold">Tipo de solicitud</span>
+              </label>
+              <select onChange={captureValues} name='solicitud'className="bg-gray-200 select select-bordered select-sm w-full">
+                <option value='Diagnostico'> Diagnostico</option>
+                <option value='Mantenimiento Preventivo Hardware'> Mantenimiento Preventivo Hardware</option>
+                <option value='Mantenimiento Preventivo Software'> Mantenimiento Preventivo Software</option>
+                <option value='Reparación'> Reparación</option>
+                <option value='Instalación software'> Instalación software</option>
+                <option value='Instalación de Hardware'> Instalación de Hardware</option>
+                <option value='Formateo'> Formateo</option>
+                <option value='Instalación Sistemas Operativos'> Instalación Sistemas Operativos</option>
+                <option value='Actualización'> Actualización</option>
+              </select>
+            </div>
+
             <div className="form-control mb-4">
               <label className="label">
-                <span className="label-text text-gray-900">Mensaje</span>
+                <span className="label-text text-white">Mensaje</span>
               </label>
 
               <textarea
                 onChange={captureValues}
                 name="message"
-                className="textarea bg-gray-300"
-                placeholder="Dejanos tu mensaje"
+                className="textarea bordered-none font-semibold bg-gray-200 "
               ></textarea>
             </div>
             <div className="form-control">
-              <button onClick={sendMessage} className="btn  border-none bg-blue-900 mt-4">
+              <button
+                onClick={sendMessage}
+                className="btn  btn-sm border-none text-white bg-blue-900   my-4"
+              >
                 Enviar
               </button>
             </div>

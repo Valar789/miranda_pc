@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import logo from 'public/logo.png'
+import logo from 'public/logo2.png'
 import Image from "next/image";
 
 export default function NavBar() {
@@ -98,7 +98,7 @@ export default function NavBar() {
         </div>
         <Link href="#header">
           
-          <a className="btn btn-ghost normal-case text-xl"><Image height={15} width={60} src={logo} alt='logo'/>MirandaPc</a>
+          <a className="btn btn-ghost normal-case text-xl"><Image height={55} width={200} src={logo} alt='logo'/></a>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -112,7 +112,7 @@ export default function NavBar() {
             <Link href="#servicios">
               <a>
                 Servicios
-                <svg
+                {/* <svg
                   className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -120,17 +120,17 @@ export default function NavBar() {
                   viewBox="0 0 24 24"
                 >
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
+                </svg> */}
               </a>
             </Link>
-            <ul className="p-2 bg-gray-800">
+            {/* <ul className="p-2 bg-gray-800">
               <li>
                 <a>Servicio 1</a>
               </li>
               <li>
                 <a>Servicio 2</a>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li>
             <Link href="#ubicacion">
@@ -149,8 +149,8 @@ export default function NavBar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end mr-4">
-        <a className="btn btn-sm border-none bg-blue-900 text-white">Asistencia en linea</a>
+      <div id='asistencia' className="navbar-end mr-4">
+        <Link href='#contacto'><a className="btn btn-sm border-none bg-blue-900 text-white">Agenta tu Cita</a></Link>
       </div>
     </div>
   );
