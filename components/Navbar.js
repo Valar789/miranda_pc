@@ -32,7 +32,7 @@ export default function NavBar() {
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn  btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -50,36 +50,21 @@ export default function NavBar() {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-900  rounded-box w-52"
           >
-            <li>
-              <Link href="#about">
-                <a>Acerca de nosotros</a>
-              </Link>
-            </li>
+            
             <li tabIndex={0}>
+              <Link href="#asesoria">
+                <a className="justify-between">
+                  Asesoria
+                </a>
+              </Link>
               <Link href="#servicios">
                 <a className="justify-between">
                   Servicios
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
                 </a>
               </Link>
-              <ul className="p-2 bg-gray-800">
-                <li>
-                  <a>Servicio 1</a>
-                </li>
-                <li>
-                  <a>Servicio 2</a>
-                </li>
-              </ul>
+
             </li>
             <li>
               <Link href="#ubicacion">
@@ -92,7 +77,14 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <a>Asistencia en linea</a>
+            <Link href="#contacto">
+                <a>Agenda tu cita</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#about">
+                <a>Acerca de nosotros</a>
+              </Link>
             </li>
           </ul>
         </div>
