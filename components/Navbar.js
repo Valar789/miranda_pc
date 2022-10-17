@@ -27,7 +27,7 @@ export default function NavBar() {
     <div
     ref={refnav}
       id="topNavBar"
-      className="inDown navbar float text-white bg-slate-900 fixed top-0 z-50"
+      className="inDown text-sm navbar float text-white bg-slate-900 fixed top-0 z-50"
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -77,7 +77,7 @@ export default function NavBar() {
             </li>
             <li>
             <Link href="#contacto">
-                <a>Agenda tu cita</a>
+                <a className="text-sm">Agenda tu cita</a>
               </Link>
             </li>
             <li>
@@ -88,7 +88,7 @@ export default function NavBar() {
           </ul>
         </div>
         <Link href="#header">    
-        <a className="flex mx-4 text-4xl font-semibold">Miranda <div className="text-blue-400 font-bold">PC</div></a>      
+        <a className="flex mx-4 text-2xl font-semibold">Miranda <div className="text-blue-400 font-bold">PC</div></a>      
           {/* <a className="text-xl "><Image height={45} width={220} src={logo} alt='logo'/></a> */}
         </Link>
       </div>
@@ -141,7 +141,7 @@ export default function NavBar() {
         </ul>
       </div>
       <div id='asistencia' className="navbar-end mr-4">
-        <Link href='#contacto'><a className="btn btn-sm border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900 text-white">Agenta tu Cita</a></Link>
+        <Link href='#contacto'><a className="text-sm py-2 px-3 border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900 text-white">Agenta tu Cita</a></Link>
       </div>
     </div>
   );

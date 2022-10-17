@@ -9,7 +9,7 @@ export default function About() {
     >
       <div className="flex flex-wrap text-gray-700 gap-5">
         <div className="w-full sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto ">
-          <h1 className="text-4xl font-bold text-blue-900  pb-4">
+          <h1 className="text-3xl font-bold text-blue-900  pb-4">
             Quienes somos
           </h1>
           <p className="my-2">

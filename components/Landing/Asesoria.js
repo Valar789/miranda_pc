@@ -21,7 +21,7 @@ export default function Asesoria() {
           />
         </div>
         <div className="sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto">
-          <h1 className="text-4xl font-bold  text-blue-900">
+          <h1 className="text-3xl font-bold  text-blue-900">
             No pierdas tiempo y dinero
           </h1>
           <p className="my-5">

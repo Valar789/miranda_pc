@@ -36,7 +36,7 @@ export default function Contacto() {
     >
       <div className="flex flex-wrap gap-5">
         <div className="w-full  sm:w-12/12 md:w-10/12 lg:w-6/12 mx-auto text-White m-auto">
-          <h1 className="text-5xl font-bold  text-white pb-4">
+          <h1 className="text-3xl font-bold  text-white pb-4">
             Programa tu servicio técnico
           </h1>
           <p>
@@ -60,14 +60,15 @@ export default function Contacto() {
           </div>
         </div>
         <div className="w-full sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto">
-          <form className="text-gray-800 bg-white px-3 rounded-md shadow-lg">
+          <form onSubmit={sendMessage} className="text-gray-800 bg-white p-3 rounded-md shadow-lg">
             <div className="form-control mb-4 flex">
               <label className="label">
-                <span className="label-text text-gray-700 font-semibold ">
-                  Nombre
+                <span className="label-text flex text-gray-700 font-semibold ">
+                  <div className="text-red-500 font-semibold">*</div>Nombre
                 </span>
               </label>
               <input
+                required
                 onChange={captureValues}
                 name="name"
                 type="text"
@@ -76,12 +77,13 @@ export default function Contacto() {
             </div>
             <div className="form-control mb-4">
               <label className="label">
-                <span className="label-text text-gray-700 font-semibold  ">
-                  Email
+                <span className="label-text flex text-gray-700 font-semibold  ">
+                <div className="text-red-500 font-semibold">*</div>Email
                 </span>
               </label>
 
               <input
+                required
                 onChange={captureValues}
                 name="email"
                 type="email"
@@ -128,7 +130,7 @@ export default function Contacto() {
 
             <div className="form-control mb-4">
               <label className="label">
-                <span className="label-text text-white">Mensaje</span>
+                <span className="label-text text-gray-700 font-semibold">Mensaje</span>
               </label>
 
               <textarea
@@ -137,10 +139,14 @@ export default function Contacto() {
                 className="textarea bordered-none font-semibold bg-gray-200 "
               ></textarea>
             </div>
+            <div className="form-control text-sm ">
+             <p className="flex py-2"> Los campos marcados con ( <div className="text-red-500 font-semibold">*</div> ) son obligatorios</p>
+            </div>
             <div className="form-control">
               <button
-                onClick={sendMessage}
-                className="btn  btn-sm border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900 text-white   my-4"
+              type="submit"
+
+                className="p-2 border-none rounded-md bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900 text-white   my-4"
               >
                 Enviar
               </button>

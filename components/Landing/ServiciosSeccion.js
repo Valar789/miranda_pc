@@ -120,10 +120,10 @@ export default function Servicios() {
           </figure>
           <div className="card-body">
             <h2 className="card-title text-blue-900 ">
-              Instalación Sistemas Operativos
+              Instalación S.O
             </h2>
             <p className="text-gray-900 ">
-            Si tienes un PC nuevo y desea instalar un sistema operativo Windows/Linux o quieres cambiar el que tienes y tu equipo cuenta con los requerimientos necesarios, agenda tu cita.
+            Si tienes un PC nuevo y desea instalar un sistema operativo(S.O) Windows/Linux o quieres cambiar el que tienes y tu equipo cuenta con los requerimientos necesarios, agenda tu cita.
             </p>
 
           </div>

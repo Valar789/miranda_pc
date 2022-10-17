@@ -8,7 +8,7 @@ export default function Asesoria() {
     >
       <div className="flex flex-wrap gap-5 text-gray-700 m-auto">
         <div className="w-full sm:w-12/12 md:w-10/12 lg:w-4/12 m-auto">
-          <h1 className="text-4xl font-bold  text-blue-900">
+          <h1 className="text-3xl font-bold  text-blue-900">
             Donde nos ubicamos
           </h1>
           <p className="my-5">
