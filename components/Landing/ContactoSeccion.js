@@ -140,7 +140,7 @@ export default function Contacto() {
               ></textarea>
             </div>
             <div className="form-control text-sm ">
-             <p className="flex py-2"> Los campos marcados con ( <div className="text-red-500 font-semibold">*</div> ) son obligatorios</p>
+             <div className="flex py-2"> Los campos marcados con  *  son obligatorios</div>
             </div>
             <div className="form-control">
               <button

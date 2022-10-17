@@ -14,20 +14,20 @@ export default function Header() {
           <h1 className="qtitle flex text-5xl font-bold pb-3 text-slate-900">
             Miranda<div className="text-blue-400 font-bold">PC</div>
           </h1>
-          <p className="text-xl text-slate-900 my-4">
+          <p className="text-lg text-slate-900 my-4">
             Ofrecemos servicios de consultoría informática y mantenimiento de
             computadores que se adaptan a tus necesidades. Nuestro compromiso
             contigo es ayudarte a tener tus dispositivos funcionando y que seas
             100% productivo.
           </p>
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-2">
             <Link href="#about">
-              <a className="btn border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-4 text-white">
+              <a className="btn border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-2 text-white">
                 Sobre nosotros
               </a>
             </Link>
             <Link href="#about">
-              <a className="btn border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-4 text-white">
+              <a className="btn border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-2 text-white">
                 Nuestros Servicios
               </a>
             </Link>
