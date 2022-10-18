@@ -22,18 +22,18 @@ export default function Header() {
           </p>
           <div className="flex flex-wrap gap-2">
             <Link href="#about">
-              <a className="btn border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-2 text-white">
+              <a className="py-2 px-3 border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-2 text-white">
                 Sobre nosotros
               </a>
             </Link>
             <Link href="#about">
-              <a className="btn border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-2 text-white">
+              <a className="py-2 px-3 border-none rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-500 hover:to-blue-900  my-2 text-white">
                 Nuestros Servicios
               </a>
             </Link>
           </div>
         </div>
-        <div className="inRight  sm:w-12/12 md:w-10/12 lg:w-6/12 m-auto">
+        <div className="sm:w-12/12 md:w-10/12 lg:w-6/12 m-auto">
           <Image
             src={imgHeader}
             alt="Sobre nosotros"
